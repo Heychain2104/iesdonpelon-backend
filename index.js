@@ -23,7 +23,7 @@ app.get("/clips", async (req, res) => {
     const token = await getAccessToken();
 
     const response = await fetch(
-      "https://api.twitch.tv/helix/clips?broadcaster_id=TU_BROADCASTER_ID&first=6",
+      "https://api.twitch.tv/helix/clips?broadcaster_id=1414652349&first=6",
       {
         headers: {
           "Client-ID": CLIENT_ID,
