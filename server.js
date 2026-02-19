@@ -65,7 +65,7 @@ app.get(
 
 app.get("/logout", (req, res) => {
   req.logout(() => {
-    res.redirect("https://heychain2104.github.io/IESDonPelon/");
+    res.redirect(`https://heychain2104.github.io/IESDonPelon?username=${username}&avatar=${avatar}`);
   });
 });
 
