@@ -63,14 +63,14 @@ app.get(
   }),
   (req, res) => {
     // Login exitoso → redirige a tu web de GitHub Pages
-    res.redirect("https://TU_GITHUB_PAGES/index.html?code=success");
+   res.redirect("https://iesdonpelon.github.io/index.html?code=success");
   }
 );
 
 // Logout
 app.get("/logout", (req, res) => {
   req.logout(() => {
-    res.redirect("https://TU_GITHUB_PAGES/index.html");
+    res.redirect("https://iesdonpelon.github.io/index.html?code=success");
   });
 });
 
