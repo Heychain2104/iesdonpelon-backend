@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://heychain2104.github.io",
+    origin: "https://heychain2104.github.io/IESDonPelon/",
     credentials: true,
   })
 );
