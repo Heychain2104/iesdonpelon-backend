@@ -32,7 +32,7 @@ passport.use(
     {
       clientID: process.env.DISCORD_CLIENT_ID,
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
-      callbackURL: "https://discord-authenticate.onrender.com",
+      callbackURL: "https://discord-authenticate.onrender.com/auth/discord/callback",
       scope: ["identify"],
     },
     (accessToken, refreshToken, profile, done) => {
